@@ -10,6 +10,7 @@ import { AppService } from './app.service';
     {
       cache: true,
       isGlobal: true,
+      expandVariables: true,// Admite la expansión variable del entorno
     }
   )],
   controllers: [AppController],

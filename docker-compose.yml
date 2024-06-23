@@ -1,0 +1,17 @@
+#version: '3.9'
+services:
+
+  postgres-db:
+    image: postgres
+    restart: always
+    container_name: postgres_db
+    ports:
+      - '${POSTGRES_PORT}:5432'
+    environment:
+      POSTGRES_DB: ${POSTGRES_DATABASE}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

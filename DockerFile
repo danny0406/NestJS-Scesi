@@ -1,0 +1,18 @@
+# Dockerfile
+FROM node:20.13.1
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE ${NODE_PORT}
+
+ENV NODE_ENV=development
+
+CMD ["npm", "run", "start:dev"]

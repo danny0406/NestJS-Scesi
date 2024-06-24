@@ -9,10 +9,8 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+#RUN npm run build
 
 EXPOSE ${NODE_PORT}
-
-ENV NODE_ENV=development
 
 CMD ["npm", "run", "start:dev"]

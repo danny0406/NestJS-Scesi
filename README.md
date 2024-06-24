@@ -1,6 +1,5 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<a href="http://nestjs.com/" target="_blank"><img src="https://nestjs.com/img/logo-small.svg" width="150" alt="Nest Logo" /></a>  <a href="https://www.docker.com/" target="_blank"><img src="https://www.svgrepo.com/show/331370/docker.svg" width="150" alt="Docker Logo" /></a> 
+
 
 
 ## Description
@@ -12,6 +11,13 @@
 ```bash
 $ npm install
 ```
+
+## Running the app with docker-compose
+
+```bash
+$ docker compose up 
+```
+
 
 ## Running the app
 
